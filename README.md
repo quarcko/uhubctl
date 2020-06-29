@@ -20,7 +20,7 @@ This is list of known compatible USB hubs:
 |:-------------------|:-----------------------------------------------------|:------|:----|:----------|:--------|:-----|
 | AmazonBasics       | HU3641V1 ([RPi issue](https://goo.gl/CLt46M))        | 4     | 3.0 |`2109:2811`| 2013    |      |
 | AmazonBasics       | HU3770V1 ([RPi issue](https://goo.gl/CLt46M))        | 7     | 3.0 |`2109:2811`| 2013    |      |
-| AmazonBasics       | HU9002V1SBL ([RPi issue](https://goo.gl/CLt46M))     | 10    | 3.1 |`2109:2817`| 2018    |      |
+| AmazonBasics       | HU9002V1SBL, HU9002V1ESL, HUC9002V1SBL, HUC9002V1EBL | 10    | 3.1 |`2109:2817`| 2018    |      |
 | Apple              | Thunderbolt Display 27" (internal USB hub)           | 6     | 2.0 |           | 2011    | 2016 |
 | Apple              | USB Keyboard With Numeric Pad (internal USB hub)     | 3     | 2.0 |           | 2011    |      |
 | Asus               | Z87-PLUS Motherboard (onboard USB hub)               | 4     | 3.0 |           | 2013    | 2016 |
@@ -29,14 +29,16 @@ This is list of known compatible USB hubs:
 | Basler             | 2000036234                                           | 4     | 3.0 |`0451:8046`| 2016    |      |
 | Belkin             | F5U101                                               | 4     | 2.0 |`0451:2046`| 2005    | 2010 |
 | Belkin             | F5U701-BLK                                           | 7     | 2.0 |           | 2008    | 2012 |
+| Buffalo            | BSH4A05U3BK                                          | 4     | 3.0 |`05E3:0610`| 2015    |      |
+| Bytecc             | BT-UH340                                             | 4     | 3.0 |`2109:8110`| 2010    |      |
 | Circuitco          | Beagleboard-xM (internal USB hub)                    | 4     | 2.0 |`0424:9514`| 2010    |      |
 | Club3D             | CSV-3242HD Dual Display Docking Station              | 4     | 3.0 |`2109:2811`| 2015    |      |
 | CyberPower         | CP-H420P                                             | 4     | 2.0 |`0409:0059`| 2004    |      |
 | Cypress            | CY4608 HX2VL development kit                         | 4     | 2.0 |`04B4:6570`| 2012    |      |
 | D-Link             | DUB-H4 rev B (silver)                                | 4     | 2.0 |`05E3:0605`| 2005    | 2010 |
-| D-Link             | DUB-H4 rev D (black). Note: rev A,C not supported    | 4     | 2.0 |`05E3:0608`| 2012    |      |
+| D-Link             | DUB-H4 rev D,E (black). Note: rev A,C not supported  | 4     | 2.0 |`05E3:0608`| 2012    |      |
 | D-Link             | DUB-H7 rev A (silver)                                | 7     | 2.0 |`2001:F103`| 2005    | 2010 |
-| D-Link             | DUB-H7 rev D (black). Note: rev B,C not supported    | 7     | 2.0 |`05E3:0608`| 2012    |      |
+| D-Link             | DUB-H7 rev D,E (black). Note: rev B,C not supported  | 7     | 2.0 |`05E3:0608`| 2012    |      |
 | Dell               | P2416D 24" QHD Monitor                               | 4     | 2.0 |           | 2017    |      |
 | Dell               | UltraSharp 1704FPT 17" LCD Monitor                   | 4     | 2.0 |`0424:A700`| 2005    | 2015 |
 | Dell               | UltraSharp U2415 24" LCD Monitor                     | 5     | 3.0 |           | 2014    |      |
@@ -46,6 +48,7 @@ This is list of known compatible USB hubs:
 | IOI                | U3H415E1                                             | 4     | 3.0 |           | 2012    |      |
 | j5create           | JUH470 (works only in USB2 mode)                     | 3     | 3.0 |`05E3:0610`| 2014    |      |
 | Juiced Systems     | 6HUB-01                                              | 7     | 3.0 |`0BDA:0411`| 2014    | 2018 |
+| LG Electronics     | 38WK95C-W monitor                                    | 4     | 3.0 |`0451:8142`| 2018    |      |
 | Lenovo             | ThinkPad Ultra Docking Station (40A20090EU)          | 6     | 2.0 |`17EF:100F`| 2015    |      |
 | Lenovo             | ThinkPad Ultra Docking Station (40AJ0135EU)          | 7     | 3.1 |`17EF:3070`| 2018    |      |
 | Lenovo             | ThinkPad X200 Ultrabase 42X4963                      | 3     | 2.0 |`17EF:1005`| 2008    | 2011 |
@@ -59,12 +62,13 @@ This is list of known compatible USB hubs:
 | Plugable           | USB3-HUB7BC                                          | 7     | 3.0 |`2109:0813`| 2015    |      |
 | Plugable           | USB3-HUB7C                                           | 7     | 3.0 |`2109:0813`| 2015    |      |
 | Plugable           | USB3-HUB7-81X                                        | 7     | 3.0 |`2109:0813`| 2012    |      |
-| Raspberry Pi       | B+, 2B, 3B (port 2 only)                             | 4     | 2.0 |           | 2011    |      |
-| Raspberry Pi       | 3B+                                                  | 6     | 2.0 |`0424:2514`| 2018    |      |
-| Raspberry Pi       | 4B (port 4 only)                                     | 4     | 3.0 |`2109:3431`| 2019    |      |
+| Raspberry Pi       | B+, 2B, 3B ([see below](#raspberry-pi-b2b3b))        | 4     | 2.0 |           | 2011    |      |
+| Raspberry Pi       | 3B+        ([see below](#raspberry-pi-3b))           | 4     | 2.0 |`0424:2514`| 2018    |      |
+| Raspberry Pi       | 4B         ([see below](#raspberry-pi-4b))           | 4     | 3.0 |`2109:3431`| 2019    |      |
 | Renesas            | uPD720202 PCIe USB 3.0 host controller               | 2     | 3.0 |           | 2013    |      |
 | Rosewill           | RHUB-210                                             | 4     | 2.0 |`0409:005A`| 2011    | 2014 |
 | Sanwa Supply       | USB-HUB14GPH                                         | 4     | 1.1 |           | 2001    | 2003 |
+| Seagate            | Backup Plus Hub STEL8000100                          | 2     | 3.0 |`0BC2:AB44`| 2016    |      |
 | StarTech           | ST4200USBM                                           | 4     | 2.0 |`0409:005A`| 2004    |      |
 | Sunix              | SHB4200MA                                            | 4     | 2.0 |`0409:0058`| 2006    | 2009 |
 | Targus             | PAUH212U                                             | 7     | 2.0 |           | 2004    | 2009 |
@@ -74,12 +78,11 @@ This table is by no means complete.
 If your hub works with `uhubctl`, but is not listed above, please report it
 by opening new issue at https://github.com/mvp/uhubctl/issues,
 so we can add it to supported table. In your report, please provide
-exact product model and add output from `uhubctl`.
+exact product model and add output from `uhubctl`
+and please test VBUS off support as described below in FAQ.
 
 Note that quite a few modern motherboards have built-in root hubs that
 do support this feature - you may not even need to buy any external hub.
-WARNING: turning off built-in USB ports may cut off your keyboard or mouse,
-so be careful what ports you are turning off!
 
 
 USB 3.0 duality note
@@ -106,11 +109,18 @@ is using `winusb.sys` driver, which according to Microsoft does not support
 [necessary USB control requests](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/f680b63f-ca4f-4e52-baa9-9e64f8eee101).
 This may be fixed if `libusb` starts supporting different driver on Windows.
 
-First, you need to install library libusb-1.0 (version 1.0.12 or later):
+First, you need to install library libusb-1.0 (version 1.0.12 or later, 1.0.16 or later is recommended):
 
 * Ubuntu: `sudo apt-get install libusb-1.0-0-dev`
 * Redhat: `sudo yum install libusb1-devel`
 * MacOSX: `brew install libusb`, or `sudo port install libusb-devel`
+  > :warning: `libusb-1.0.23` is [broken](https://github.com/libusb/libusb/issues/707) on MacOS Catalina!
+  You have to install `libusb-1.0.22` until [libusb issue 707](https://github.com/libusb/libusb/issues/707) is fixed,
+  or use this workaround to force use of older Mojave build:
+
+      brew uninstall --ignore-dependencies libusb
+      brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/5314f1d/Formula/libusb.rb
+
 * FreeBSD: libusb is included by default
 * NetBSD: `sudo pkgin install libusb1 gmake pkg-config`
 * Windows: TBD?
@@ -140,6 +150,9 @@ This means operate on default smart hub and turn power off (`-a off`, or `-a 0`)
 on port 2 (`-p 2`). Supported actions are `off`/`on`/`cycle` (or `0`/`1`/`2`).
 `cycle` means turn power off, wait some delay (configurable with `-d`) and turn it back on.
 Ports can be comma separated list, and may use `-` for ranges e.g. `2`, or `2,4`, or `2-5`, or `1-2,5-8`.
+
+> :warning: Turning off built-in USB ports may cut off your keyboard or mouse,
+so be careful which ports you are turning off!
 
 If you have more than one smart USB hub connected, you should choose
 specific hub to control using `-l` (location) parameter.
@@ -247,12 +260,18 @@ You can use option `-r N` where N is some number from 10 to 1000 to fix this -
 `uhubctl` will try to turn power off many times in quick succession, and it should suppress that.
 This may be eventually fixed in kernel, see more discussion [here](https://bit.ly/2JzczjZ).
 
+If your device is USB mass storage, invoking `udisksctl` before calling `uhubctl`
+might help to mitigate this issue:
+
+    sudo udisksctl power-off --block-device /dev/disk/...`
+    sudo uhubctl -a off ...
+
 
 #### _Multiple 4-port hubs are detected, but I only have one 7-port hub connected_
 
 Many hub manufacturers build their USB hubs using basic 4 port USB chips.
 E.g. to make 7 port hub, they daisy-chain two 4 port hubs - 1 port is lost to daisy-chaining,
-so it makes it 4+4-1=7 port hub. Simularly, 10 port hub could be built as 3 4-port hubs
+so it makes it 4+4-1=7 port hub. Similarly, 10 port hub could be built as 3 4-port hubs
 daisy-chained together, which gives 4+4+4-2=10 usable ports.
 
 Note that you should never try to change power state for ports used to daisy-chain internal hubs together.
@@ -262,19 +281,48 @@ Doing so will confuse internal hub circuitry and will cause unpredictable behavi
 #### _Raspberry Pi turns power off on all ports, not just the one I specified_
 
 This is limitation of Raspberry Pi hardware design.
-For reference, Raspberry Pi models have following internal USB topology:
 
-* B+/2B/3B: one USB hub `1-1`, with port `1` for Ethernet+wifi, and ports `2-5` ganged, controlled by port `2`.
-  (Trying to control ports 3,4,5 won't do anything).
-* 3B+: 2 hubs - main hub `1-1`, all 4 ports ganged, all controlled by port `2`.
-   Second hub `1-1.1` (daisy-chained to main): 3 independently controlled ports, `1` is used for Ethernet+wifi,
-   and ports `2,3` are available with proper per-port power switching.
-   In other words, 2 out of total 4 ports wired outside do support independent power switching on 3B+.
-* 4B: Hardware only supports ganged power switching, firmware is reporting inconsistent USB descriptors.
-      USB3 hub `2`, 4 ports, incorrectly reports per-port power switching. BOS `ContainerID` not reported (required for USB3).
-      USB2 hub `1`, 1 port, no usable ports, connects hub `1-1` below.
-      USB2 hub `1-1`, 4 ports, dual to USB3 hub above. Hub descriptor reports ganged power switching. VBUS is controlled by port 4.
-      USB2 hub `3`, 1 port, OTG controller, incorrectly reports ganged power switching.
+For reference, supported Raspberry Pi models have following internal USB topology:
+
+##### Raspberry Pi B+,2B,3B
+
+  * Single hub `1-1`, ports 2-5 ganged, all controlled by port `2`:
+
+        uhubctl -l 1-1 -p 2 -a 0
+
+    Trying to control ports `3`,`4`,`5` will not do anything.
+    Port `1` controls power for Ethernet+WiFi.
+
+##### Raspberry Pi 3B+
+
+  * Main hub `1-1`, all 4 ports ganged, all controlled by port `2` (turns off secondary hub ports as well).
+    Port `1` connects hub `1-1.1` below, ports `2` and `3` are wired outside, port `4` not wired.
+
+        uhubctl -l 1-1 -p 2 -a 0
+
+  * Secondary hub `1-1.1` (daisy-chained to main): 3 ports,
+    port `1` is used for Ethernet+WiFi, and ports `2` and `3` are wired outside.
+
+
+##### Raspberry Pi 4B
+
+ > :warning: You may need to [update firmware](https://www.raspberrypi.org/documentation/hardware/raspberrypi/booteeprom.md)
+to vl805 00137ac or later to make power switching work on RPi 4B.
+
+  * USB2 hub `1`, 1 port, only connects hub `1-1` below.
+
+  * USB2 hub `1-1`, 4 ports ganged, dual to USB3 hub `2` below:
+
+        uhubctl -l 1-1 -a 0
+
+  * USB3 hub `2`, 4 ports ganged, dual to USB2 hub `1-1` above:
+
+        uhubctl -l 2 -a 0
+
+  * USB2 hub `3`, 1 port, OTG controller:
+
+        uhubctl -l 3 -p 1 -a 0
+
 
 As a workaround, you can buy any external USB hub from supported list,
 attach it to any USB port of Raspberry Pi, and control power on its ports independently.
@@ -291,14 +339,16 @@ Notable projects using uhubctl
 | [Build Status Light](https://goo.gl/3GA82o)              | Create a build status light in under 10 minutes       |
 | [Buildenlights](https://git.io/fj1FC)                    | GitLab/GitHub project build status as green/red light |
 | [Weather Station](https://goo.gl/3b1FzC)                 | Reset Weather Station when it freezes                 |
-| [sysmoQMOD](https://goo.gl/8wvcKA)                       | Reset cellular modems when necessary                  |
+| [sysmoQMOD](https://bit.ly/2VtWrVt)                      | Reset cellular modems when necessary                  |
 | [Smog Sensor](https://bit.ly/2EMwgCk)                    | Raspberry Pi based smog sensor power reset            |
 | [Terrible Cluster](https://goo.gl/XjiXFu)                | Power on/off Raspberry Pi cluster nodes as needed     |
-| [Ideal Music Server](https://bit.ly/2UJq6Z9)             | Turn off unused USB ports to improve audio quality    |
+| [Ideal Music Server](https://bit.ly/39MeVFQ)             | Turn off unused USB ports to improve audio quality    |
 | [USB drives with no phantom load](https://goo.gl/qfrmGK) | Power USB drives only when needed to save power       |
 | [USB drive data recovery](https://goo.gl/4MddLr)         | Recover data from failing USB hard drive              |
 | [Control power to 3D printer](https://git.io/fh5Tr)      | OctoPrint web plugin for USB power control            |
 | [USB fan for Raspberry Pi](https://bit.ly/2TRV6sM)       | Control USB fan to avoid Raspberry Pi overheating     |
+| [Raspberry Pi Reboot Router](https://bit.ly/3aNbQqs)     | Automatically reboot router if internet isn't working |
+| [Control USB Lamp With Voice](https://bit.ly/2VtW2SX)    | Voice Control of USB Lamp using Siri and Raspberry Pi |
 
 
 Copyright
